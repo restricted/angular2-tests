@@ -1,15 +1,13 @@
-import { Input, Component } from '@angular/core';
-
-import { ROUTER_DIRECTIVES } from '@angular/router';
-
-import { SEMANTIC_COMPONENTS, SEMANTIC_DIRECTIVES } from "ng-semantic";
+import {Component} from "@angular/core";
+import {ROUTER_DIRECTIVES} from "@angular/router";
+import {SEMANTIC_COMPONENTS, SEMANTIC_DIRECTIVES} from "ng-semantic";
 
 /**
-  Test page with back button to home page
-  Includes semantic-ui accordion and button directives (ng-semantic)
-*/
+ Test page with back button to home page
+ Includes semantic-ui accordion and button directives (ng-semantic)
+ */
 @Component({
-  template: `
+    template: `
   <h1>Test router link</h1>
   <sm-button routerLink="/" class="primary" icon="home">Back to home</sm-button>
   <br/>
@@ -36,7 +34,7 @@ import { SEMANTIC_COMPONENTS, SEMANTIC_DIRECTIVES } from "ng-semantic";
   </div>
   <router-outlet></router-outlet>
   `,
-  directives: [SEMANTIC_COMPONENTS, SEMANTIC_DIRECTIVES, ROUTER_DIRECTIVES]
+    directives: [SEMANTIC_COMPONENTS, SEMANTIC_DIRECTIVES, ROUTER_DIRECTIVES]
 })
 
 export class AppLinkComponent {
