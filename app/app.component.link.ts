@@ -15,7 +15,8 @@ import { SEMANTIC_COMPONENTS, SEMANTIC_DIRECTIVES } from "ng-semantic";
   <br/>
   <br/>
   <div class="ui container">
-    <sm-accordion class="styled">
+  <h2>Fluid accordion</h2>
+    <sm-accordion class="fluid styled">
       <sm-accordion-item>
           <accordion-title>What is a dog?</accordion-title>
           <accordion-content>A dog is a type of domesticated animal. Known for its loyalty and faithfulness,
